@@ -1,0 +1,726 @@
+{
+  "name": "Model",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "dim_product",
+        "lineageTag": "bf4ce3d0-6aa2-4c31-be1a-9245897bb32a",
+        "columns": [
+          {
+            "name": "product_id",
+            "dataType": "int64",
+            "sourceColumn": "product_id",
+            "lineageTag": "c419cb82-8459-4d8c-86ac-c8c97ef73261",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "product_name",
+            "dataType": "string",
+            "sourceColumn": "product_name",
+            "lineageTag": "48c804ae-4f81-474b-8faf-ebc30666f9c3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "category_name",
+            "dataType": "string",
+            "sourceColumn": "category_name",
+            "lineageTag": "72fbb544-c012-4909-8b6b-8172a1225aaa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "supplier_name",
+            "dataType": "string",
+            "sourceColumn": "supplier_name",
+            "lineageTag": "ee670e68-39c5-4fd5-8f69-13996bfe2d17",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "unit_price",
+            "dataType": "double",
+            "sourceColumn": "unit_price",
+            "lineageTag": "4b6f3cfa-e05f-4db3-a99a-f60e0540d4d8",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "units_in_stock",
+            "dataType": "int64",
+            "sourceColumn": "units_in_stock",
+            "lineageTag": "f9ed45dc-3572-4b9b-86cd-7e934b5475dc",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "reorder_level",
+            "dataType": "int64",
+            "sourceColumn": "reorder_level",
+            "lineageTag": "63bacb0b-f2be-4abd-ad50-bf3e57bc631e",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_product",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\dim_product.csv\"),[Delimiter=\",\", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"product_id\", Int64.Type}, {\"product_name\", type text}, {\"category_name\", type text}, {\"supplier_name\", type text}, {\"unit_price\", type number}, {\"units_in_stock\", Int64.Type}, {\"reorder_level\", Int64.Type}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_supplier",
+        "lineageTag": "7b46c1a2-931d-439e-8f06-01000e7c0b18",
+        "columns": [
+          {
+            "name": "supplier_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_id",
+            "lineageTag": "b1032ac4-0c1f-4a56-a10c-12670805d61d",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "company_name",
+            "dataType": "string",
+            "sourceColumn": "company_name",
+            "lineageTag": "34905226-c7ea-454b-81bc-3d3805c949cc",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "lineageTag": "91262133-67ce-4228-8699-97fda3a0b2d8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_supplier",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\dim_supplier.csv\"),[Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"supplier_id\", Int64.Type}, {\"company_name\", type text}, {\"country\", type text}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fulfilment_rate",
+        "lineageTag": "4447a81d-af6c-408e-af36-093a89ab59f4",
+        "columns": [
+          {
+            "name": "delay_bucket",
+            "dataType": "string",
+            "sourceColumn": "delay_bucket",
+            "lineageTag": "ad270281-5e45-4f69-9827-1b5c4dc7c74a",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_count",
+            "dataType": "int64",
+            "sourceColumn": "order_count",
+            "lineageTag": "bc5c7a19-65c8-4383-8e91-1b12392ae47d",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "pct_of_orders",
+            "dataType": "double",
+            "sourceColumn": "pct_of_orders",
+            "lineageTag": "b6655153-680e-4566-95d5-526cebd5176c",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "avg_days_vs_required",
+            "dataType": "double",
+            "sourceColumn": "avg_days_vs_required",
+            "lineageTag": "c58f2664-e861-4b85-899c-8a07d01a7bbd",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fulfilment_rate",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\fulfilment_rate.csv\"),[Delimiter=\",\", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"delay_bucket\", type text}, {\"order_count\", Int64.Type}, {\"pct_of_orders\", type number}, {\"avg_days_vs_required\", type number}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "inventory_turnover",
+        "lineageTag": "7d0054c0-6d7d-4736-bc43-85964456bcae",
+        "columns": [
+          {
+            "name": "product_id",
+            "dataType": "int64",
+            "sourceColumn": "product_id",
+            "lineageTag": "c8f33720-0a00-4468-873e-e2ddf120a746",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "product_name",
+            "dataType": "string",
+            "sourceColumn": "product_name",
+            "lineageTag": "aafc7680-4c09-4ac7-a62c-7cd9e51a5c1d",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "category_name",
+            "dataType": "string",
+            "sourceColumn": "category_name",
+            "lineageTag": "6658a942-4569-46cd-a211-e0992f9d0f4f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "units_in_stock",
+            "dataType": "int64",
+            "sourceColumn": "units_in_stock",
+            "lineageTag": "e720a37c-5b8b-423e-9499-7498290af7d0",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "reorder_level",
+            "dataType": "int64",
+            "sourceColumn": "reorder_level",
+            "lineageTag": "2f940f36-7f53-4499-8e08-6822bbc22c70",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_units_sold",
+            "dataType": "int64",
+            "sourceColumn": "total_units_sold",
+            "lineageTag": "cb72f6c9-e8c8-441f-93d4-e49a875ac61c",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_count",
+            "dataType": "int64",
+            "sourceColumn": "order_count",
+            "lineageTag": "58843d8c-bc43-474b-b701-54ebebd03145",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "turnover_proxy_using_current_stock",
+            "dataType": "double",
+            "sourceColumn": "turnover_proxy_using_current_stock",
+            "lineageTag": "9450b7d8-4908-4976-9a4c-fc0766fd49d3",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "turnover_rank_within_category",
+            "dataType": "int64",
+            "sourceColumn": "turnover_rank_within_category",
+            "lineageTag": "29d6addf-e645-458a-8b2d-fad9e27e819f",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "inventory_turnover",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\inventory_turnover.csv\"),[Delimiter=\",\", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"product_id\", Int64.Type}, {\"product_name\", type text}, {\"category_name\", type text}, {\"units_in_stock\", Int64.Type}, {\"reorder_level\", Int64.Type}, {\"total_units_sold\", Int64.Type}, {\"order_count\", Int64.Type}, {\"turnover_proxy_using_current_stock\", type number}, {\"turnover_rank_within_category\", Int64.Type}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Avg Turnover Proxy",
+            "expression": "AVERAGE(inventory_turnover[turnover_proxy_using_current_stock])",
+            "lineageTag": "873cdfe2-6d58-472f-99d0-e8d4eeb13205"
+          },
+          {
+            "name": "Total Units Sold",
+            "expression": "SUM(inventory_turnover[total_units_sold])",
+            "lineageTag": "c6ab65e0-8e35-4376-a6da-a3b228fe0a8d"
+          }
+        ]
+      },
+      {
+        "name": "slow_moving_stock",
+        "lineageTag": "e333aca6-3ccf-4217-b8b3-90bd82ea2ceb",
+        "columns": [
+          {
+            "name": "product_id",
+            "dataType": "int64",
+            "sourceColumn": "product_id",
+            "lineageTag": "e36b0255-5023-49e8-814a-5b144d96d300",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "product_name",
+            "dataType": "string",
+            "sourceColumn": "product_name",
+            "lineageTag": "89b76d8f-ee23-4503-9da9-16d9f3bb19a8",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "units_in_stock",
+            "dataType": "int64",
+            "sourceColumn": "units_in_stock",
+            "lineageTag": "66c3383e-4c79-4f4e-9b89-dc802db0fe36",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "reorder_level",
+            "dataType": "int64",
+            "sourceColumn": "reorder_level",
+            "lineageTag": "336f0670-ab69-477e-8665-b28e233c3641",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "last_order_date",
+            "dataType": "dateTime",
+            "sourceColumn": "last_order_date",
+            "lineageTag": "083e8a8f-80e2-4339-8b70-1c92bbfabf1f",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days_since_last_sale",
+            "dataType": "int64",
+            "sourceColumn": "days_since_last_sale",
+            "lineageTag": "98a72e75-35da-4c56-9713-04061bf50f1d",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_units_sold",
+            "dataType": "int64",
+            "sourceColumn": "total_units_sold",
+            "lineageTag": "157a0559-bdac-4a6b-a50a-e730d3354104",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "total_revenue",
+            "dataType": "double",
+            "sourceColumn": "total_revenue",
+            "lineageTag": "76c88573-4bb5-4cff-8e80-f328b9add737",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "abc_class",
+            "dataType": "string",
+            "sourceColumn": "abc_class",
+            "lineageTag": "3e2e60aa-a62c-40d3-911d-988da55a90f3",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "is_slow_moving",
+            "dataType": "boolean",
+            "sourceColumn": "is_slow_moving",
+            "lineageTag": "2aa873bb-a88e-4a53-bb05-4812d7f4e220",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "slow_moving_stock",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\slow_moving_stock.csv\"),[Delimiter=\",\", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"product_id\", Int64.Type}, {\"product_name\", type text}, {\"units_in_stock\", Int64.Type}, {\"reorder_level\", Int64.Type}, {\"last_order_date\", type date}, {\"days_since_last_sale\", Int64.Type}, {\"total_units_sold\", Int64.Type}, {\"total_revenue\", type number}, {\"abc_class\", type text}, {\"is_slow_moving\", type logical}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Slow Moving Product Count",
+            "expression": "CALCULATE(COUNTROWS(slow_moving_stock), slow_moving_stock[is_slow_moving] = TRUE)",
+            "lineageTag": "6d99c137-8814-4218-9f74-099b15af081a"
+          },
+          {
+            "name": "Slow Moving Stock Value",
+            "expression": "CALCULATE(SUMX(slow_moving_stock, slow_moving_stock[units_in_stock]), slow_moving_stock[is_slow_moving] = TRUE)",
+            "lineageTag": "2fafd937-c6dc-4f99-a385-3787f6b0f0fc"
+          },
+          {
+            "name": "Avg Days Since Last Sale",
+            "expression": "AVERAGE(slow_moving_stock[days_since_last_sale])",
+            "lineageTag": "7b94de5c-a70c-41ac-bd31-78c37b0856b1"
+          }
+        ]
+      },
+      {
+        "name": "supplier_lead_time",
+        "lineageTag": "8428ea70-09c9-45df-99a2-8d7c447881c4",
+        "columns": [
+          {
+            "name": "supplier_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_id",
+            "lineageTag": "ff9a06d4-8a5f-43e9-88b6-a589d04b83d7",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "company_name",
+            "dataType": "string",
+            "sourceColumn": "company_name",
+            "lineageTag": "6fab48ef-bb47-406c-a7ec-67aa116b6297",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "lineageTag": "c64956ea-e32d-4138-9f66-d32779792785",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "orders_supplied",
+            "dataType": "int64",
+            "sourceColumn": "orders_supplied",
+            "lineageTag": "c8404a32-bd50-4283-9b0e-daefab9ff154",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "avg_lead_time_days",
+            "dataType": "double",
+            "sourceColumn": "avg_lead_time_days",
+            "lineageTag": "61724fef-b7af-437c-a128-ca4f92e1f86f",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "late_delivery_pct",
+            "dataType": "double",
+            "sourceColumn": "late_delivery_pct",
+            "lineageTag": "8573a1ea-668f-41db-b338-903f7b4aab3e",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "rank_by_fastest_avg_lead_time",
+            "dataType": "int64",
+            "sourceColumn": "rank_by_fastest_avg_lead_time",
+            "lineageTag": "2df626ce-cd9d-4dd2-860f-6877cb26ac1a",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "rank_by_lowest_late_pct",
+            "dataType": "int64",
+            "sourceColumn": "rank_by_lowest_late_pct",
+            "lineageTag": "9a2f5f6e-069d-4e01-b9f5-41cb918bdc4b",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "supplier_lead_time",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"C:\\\\Users\\\\srija\\\\Downloads\\\\claude code\\\\projects\\\\inventory-supply-chain-analytics\\\\exports\\\\supplier_lead_time.csv\"),[Delimiter=\",\", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"supplier_id\", Int64.Type}, {\"company_name\", type text}, {\"country\", type text}, {\"orders_supplied\", Int64.Type}, {\"avg_lead_time_days\", type number}, {\"late_delivery_pct\", type number}, {\"rank_by_fastest_avg_lead_time\", Int64.Type}, {\"rank_by_lowest_late_pct\", Int64.Type}})\nin\n    #\"Changed Type\""
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Avg Lead Time Days",
+            "expression": "AVERAGE(supplier_lead_time[avg_lead_time_days])",
+            "lineageTag": "e6e52cee-99f2-4039-99b6-941dba7224b5"
+          },
+          {
+            "name": "Avg Late Delivery %",
+            "expression": "AVERAGE(supplier_lead_time[late_delivery_pct])",
+            "lineageTag": "02c4beb8-aa6c-4fb0-8510-23883e36c701"
+          },
+          {
+            "name": "Fastest Supplier",
+            "expression": "CALCULATE(SELECTEDVALUE(supplier_lead_time[company_name]), supplier_lead_time[rank_by_fastest_avg_lead_time] = 1)",
+            "lineageTag": "762e33f8-93f8-411f-83b6-85dc7a9627cc"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "cc874ff0-515a-40a0-a41a-45748270fd20",
+        "fromTable": "inventory_turnover",
+        "fromColumn": "product_id",
+        "toTable": "dim_product",
+        "toColumn": "product_id",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "fc43ee2e-4531-4461-a975-7eaae459f41f",
+        "fromTable": "slow_moving_stock",
+        "fromColumn": "product_id",
+        "toTable": "dim_product",
+        "toColumn": "product_id",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "985cc25c-021a-417f-985e-7cd746132844",
+        "fromTable": "supplier_lead_time",
+        "fromColumn": "supplier_id",
+        "toTable": "dim_supplier",
+        "toColumn": "supplier_id",
+        "crossFilteringBehavior": "bothDirections"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"dim_product\", \"dim_supplier\", \"fulfilment_rate\", \"inventory_turnover\", \"slow_moving_stock\", \"supplier_lead_time\"]"
+      }
+    ]
+  }
+}
