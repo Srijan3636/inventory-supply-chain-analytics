@@ -1,0 +1,5 @@
+delay_bucket,order_count,pct_of_orders,avg_days_vs_required
+On time or early,772,95.4,-20.6
+Late 1-7 days,28,3.5,3.8
+Late 8-14 days,4,0.5,9.3
+Late 15+ days,5,0.6,18.4

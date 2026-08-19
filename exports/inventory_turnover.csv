@@ -1,0 +1,78 @@
+product_id,product_name,category_name,units_in_stock,reorder_level,total_units_sold,order_count,turnover_proxy_using_current_stock,turnover_rank_within_category
+2,Chang,Beverages,17,25,1057,44,62.18,1
+24,Guaraná Fantástica,Beverages,20,0,1125,51,56.25,2
+70,Outback Lager,Beverages,15,30,817,39,54.47,3
+35,Steeleye Stout,Beverages,20,15,883,36,44.15,4
+38,Côte de Blaye,Beverages,17,15,623,24,36.65,5
+43,Ipoh Coffee,Beverages,17,25,580,28,34.12,6
+1,Chai,Beverages,39,10,828,38,21.23,7
+76,Lakkalikööri,Beverages,57,20,981,39,17.21,8
+39,Chartreuse verte,Beverages,69,5,793,30,11.49,9
+75,Rhönbräu Klosterbier,Beverages,125,25,1155,46,9.24,10
+34,Sasquatch Ale,Beverages,111,15,506,19,4.56,11
+67,Laughing Lumberjack Lager,Beverages,52,10,184,10,3.54,12
+8,Northwoods Cranberry Sauce,Condiments,6,0,372,13,62.0,1
+66,Louisiana Hot Spiced Okra,Condiments,4,20,239,8,59.75,2
+3,Aniseed Syrup,Condiments,13,25,328,12,25.23,3
+77,Original Frankfurter grüne Soße,Condiments,32,15,791,38,24.72,4
+44,Gula Malacca,Condiments,27,15,601,24,22.26,5
+63,Vegie-spread,Condiments,24,5,445,17,18.54,6
+65,Louisiana Fiery Hot Pepper Sauce,Condiments,76,0,745,32,9.8,7
+4,Chef Anton's Cajun Seasoning,Condiments,53,0,453,20,8.55,8
+61,Sirop d'érable,Condiments,113,25,603,24,5.34,9
+15,Genen Shouyu,Condiments,39,5,122,6,3.13,10
+6,Grandma's Boysenberry Spread,Condiments,120,25,301,12,2.51,11
+5,Chef Anton's Gumbo Mix,Condiments,0,0,298,10,,12
+21,Sir Rodney's Scones,Confections,3,5,1016,39,338.67,1
+68,Scottish Longbreads,Confections,6,15,799,34,133.17,2
+62,Tarte au sucre,Confections,17,0,1083,48,63.71,3
+49,Maxilaku,Confections,10,15,520,21,52.0,4
+26,Gumbär Gummibärchen,Confections,15,0,753,32,50.2,5
+16,Pavlova,Confections,29,10,1158,43,39.93,6
+19,Teatime Chocolate Biscuits,Confections,25,5,723,37,28.92,7
+47,Zaanse koeken,Confections,36,0,485,21,13.47,8
+48,Chocolade,Confections,15,25,138,6,9.2,9
+20,Sir Rodney's Marmalade,Confections,40,0,313,16,7.83,10
+27,Schoggi Schokolade,Confections,49,30,365,9,7.45,11
+25,NuNuCa Nuß-Nougat-Creme,Confections,76,30,318,18,4.18,12
+50,Valkoinen suklaa,Confections,65,30,235,10,3.62,13
+60,Camembert Pierrot,Dairy Products,19,0,1577,51,83.0,1
+72,Mozzarella di Giovanni,Dairy Products,14,0,806,38,57.57,2
+71,Flotemysost,Dairy Products,26,0,1057,42,40.65,3
+32,Mascarpone Fabioli,Dairy Products,9,25,297,15,33.0,4
+11,Queso Cabrales,Dairy Products,22,30,706,38,32.09,5
+69,Gudbrandsdalsost,Dairy Products,26,15,714,31,27.46,6
+59,Raclette Courdavault,Dairy Products,79,0,1496,54,18.94,7
+33,Geitost,Dairy Products,112,20,755,32,6.74,8
+12,Queso Manchego La Pastora,Dairy Products,86,0,344,14,4.0,9
+31,Gorgonzola Telino,Dairy Products,0,20,1397,51,,10
+56,Gnocchi di nonna Alice,Grains/Cereals,21,30,1263,50,60.14,1
+64,Wimmers gute Semmelknödel,Grains/Cereals,22,30,740,30,33.64,2
+42,Singaporean Hokkien Fried Mee,Grains/Cereals,26,0,697,30,26.81,3
+52,Filo Mix,Grains/Cereals,38,25,500,29,13.16,4
+57,Ravioli Angelo,Grains/Cereals,36,20,434,23,12.06,5
+23,Tunnbröd,Grains/Cereals,61,25,580,20,9.51,6
+22,Gustaf's Knäckebröd,Grains/Cereals,104,25,348,14,3.35,7
+54,Tourtière,Meat/Poultry,21,10,755,36,35.95,1
+55,Pâté chinois,Meat/Poultry,115,20,903,33,7.85,2
+9,Mishi Kobe Niku,Meat/Poultry,29,0,95,5,3.28,3
+29,Thüringer Rostbratwurst,Meat/Poultry,0,0,746,32,,4
+53,Perth Pasties,Meat/Poultry,0,0,722,30,,4
+17,Alice Mutton,Meat/Poultry,0,0,978,37,,4
+74,Longlife Tofu,Produce,4,5,297,13,74.25,1
+7,Uncle Bob's Organic Dried Pears,Produce,15,10,763,29,50.87,2
+51,Manjimup Dried Apples,Produce,20,10,886,39,44.3,3
+28,Rössle Sauerkraut,Produce,26,0,640,33,24.62,4
+14,Tofu,Produce,35,0,404,22,11.54,5
+45,Rogede sild,Seafood,5,15,508,14,101.6,1
+30,Nord-Ost Matjeshering,Seafood,10,15,612,32,61.2,2
+13,Konbu,Seafood,24,5,891,40,37.13,3
+10,Ikura,Seafood,31,0,742,33,23.94,4
+18,Carnarvon Tigers,Seafood,42,0,539,27,12.83,5
+41,Jack's New England Clam Chowder,Seafood,85,10,981,47,11.54,6
+37,Gravad lax,Seafood,11,25,125,6,11.36,7
+40,Boston Crab Meat,Seafood,123,30,1103,41,8.97,8
+58,Escargots de Bourgogne,Seafood,62,20,534,18,8.61,9
+36,Inlagd Sill,Seafood,112,20,805,31,7.19,10
+46,Spegesild,Seafood,95,0,548,27,5.77,11
+73,Röd Kaviar,Seafood,101,5,293,14,2.9,12

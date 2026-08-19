@@ -1,0 +1,78 @@
+product_id,product_name,units_in_stock,reorder_level,last_order_date,days_since_last_sale,total_units_sold,total_revenue,abc_class,is_slow_moving
+15,Genen Shouyu,39,5,1997-09-04,244,122,1784.82,C,True
+48,Chocolade,15,25,1998-01-05,121,138,1368.71,C,True
+9,Mishi Kobe Niku,29,0,1998-01-23,103,95,7226.5,B,True
+37,Gravad lax,11,25,1998-03-20,47,125,2688.4,C,False
+47,Zaanse koeken,36,0,1998-03-26,41,485,3958.08,C,False
+27,Schoggi Schokolade,49,30,1998-03-26,41,365,15099.88,A,False
+74,Longlife Tofu,4,5,1998-04-03,33,297,2432.5,C,False
+22,Gustaf's Knäckebröd,104,25,1998-04-06,30,348,7122.36,B,False
+58,Escargots de Bourgogne,62,20,1998-04-09,27,534,5881.68,B,False
+45,Rogede sild,5,15,1998-04-09,27,508,4338.17,C,False
+72,Mozzarella di Giovanni,14,0,1998-04-14,22,806,24900.13,A,False
+65,Louisiana Fiery Hot Pepper Sauce,76,0,1998-04-15,21,745,13869.89,A,False
+26,Gumbär Gummibärchen,15,0,1998-04-15,21,753,19849.14,A,False
+56,Gnocchi di nonna Alice,21,30,1998-04-16,20,1263,42593.06,A,False
+69,Gudbrandsdalsost,26,15,1998-04-17,19,714,21942.36,A,False
+29,Thüringer Rostbratwurst,0,0,1998-04-17,19,746,80368.67,A,False
+36,Inlagd Sill,112,20,1998-04-17,19,805,13458.46,A,False
+38,Côte de Blaye,17,15,1998-04-17,19,623,141396.74,A,False
+59,Raclette Courdavault,79,0,1998-04-20,16,1496,71155.7,A,False
+42,Singaporean Hokkien Fried Mee,26,0,1998-04-20,16,697,8575.0,B,False
+49,Maxilaku,10,15,1998-04-21,15,520,9244.6,B,False
+71,Flotemysost,26,0,1998-04-21,15,1057,19551.03,A,False
+63,Vegie-spread,24,5,1998-04-22,14,445,16701.1,A,False
+44,Gula Malacca,27,15,1998-04-22,14,601,9915.95,B,False
+62,Tarte au sucre,17,0,1998-04-23,13,1083,47234.97,A,False
+35,Steeleye Stout,20,15,1998-04-23,13,883,13644.0,A,False
+5,Chef Anton's Gumbo Mix,0,0,1998-04-24,12,298,5347.2,C,False
+18,Carnarvon Tigers,42,0,1998-04-27,9,539,29171.87,A,False
+57,Ravioli Angelo,36,20,1998-04-28,8,434,7661.55,B,False
+67,Laughing Lumberjack Lager,52,10,1998-04-28,8,184,2396.8,C,False
+51,Manjimup Dried Apples,20,10,1998-04-28,8,886,41819.65,A,False
+25,NuNuCa Nuß-Nougat-Creme,76,30,1998-04-28,8,318,3704.4,C,False
+33,Geitost,112,20,1998-04-28,8,755,1648.12,C,False
+21,Sir Rodney's Scones,3,5,1998-04-29,7,1016,9104.0,B,False
+61,Sirop d'érable,113,25,1998-04-29,7,603,14352.6,A,False
+40,Boston Crab Meat,123,30,1998-04-30,6,1103,17910.63,A,False
+70,Outback Lager,15,30,1998-04-30,6,817,10672.65,B,False
+68,Scottish Longbreads,6,15,1998-05-01,5,799,8714.0,B,False
+17,Alice Mutton,0,0,1998-05-01,5,978,32698.38,A,False
+34,Sasquatch Ale,111,15,1998-05-01,5,506,6350.4,B,False
+30,Nord-Ost Matjeshering,10,15,1998-05-01,5,612,13424.2,A,False
+54,Tourtière,21,10,1998-05-01,5,755,4728.24,C,False
+53,Perth Pasties,0,0,1998-05-01,5,722,20574.17,A,False
+28,Rössle Sauerkraut,26,0,1998-05-04,2,640,25696.64,A,False
+43,Ipoh Coffee,17,25,1998-05-04,2,580,23526.7,A,False
+24,Guaraná Fantástica,20,0,1998-05-05,1,1125,4504.36,C,False
+1,Chai,39,10,1998-05-05,1,828,12788.1,A,False
+50,Valkoinen suklaa,65,30,1998-05-05,1,235,3437.69,C,False
+31,Gorgonzola Telino,0,20,1998-05-05,1,1397,14920.87,A,False
+11,Queso Cabrales,22,30,1998-05-05,1,706,12901.77,A,False
+77,Original Frankfurter grüne Soße,32,15,1998-05-06,0,791,9171.63,B,False
+60,Camembert Pierrot,19,0,1998-05-06,0,1577,46825.48,A,False
+39,Chartreuse verte,69,5,1998-05-06,0,793,12294.54,B,False
+3,Aniseed Syrup,13,25,1998-05-06,0,328,3044.0,C,False
+6,Grandma's Boysenberry Spread,120,25,1998-05-06,0,301,7137.0,B,False
+20,Sir Rodney's Marmalade,40,0,1998-05-06,0,313,22563.36,A,False
+10,Ikura,31,0,1998-05-06,0,742,20867.34,A,False
+76,Lakkalikööri,57,20,1998-05-06,0,981,15760.44,A,False
+52,Filo Mix,38,25,1998-05-06,0,500,3232.95,C,False
+64,Wimmers gute Semmelknödel,22,30,1998-05-06,0,740,21957.97,A,False
+55,Pâté chinois,115,20,1998-05-06,0,903,17426.4,A,False
+23,Tunnbröd,61,25,1998-05-06,0,580,4601.7,C,False
+4,Chef Anton's Cajun Seasoning,53,0,1998-05-06,0,453,8567.9,B,False
+46,Spegesild,95,0,1998-05-06,0,548,5883.0,B,False
+8,Northwoods Cranberry Sauce,6,0,1998-05-06,0,372,12772.0,B,False
+41,Jack's New England Clam Chowder,85,10,1998-05-06,0,981,8680.34,B,False
+32,Mascarpone Fabioli,9,25,1998-05-06,0,297,8404.16,B,False
+7,Uncle Bob's Organic Dried Pears,15,10,1998-05-06,0,763,22044.3,A,False
+73,Röd Kaviar,101,5,1998-05-06,0,293,3997.2,C,False
+75,Rhönbräu Klosterbier,125,25,1998-05-06,0,1155,8177.49,B,False
+16,Pavlova,29,10,1998-05-06,0,1158,17215.78,A,False
+2,Chang,17,25,1998-05-06,0,1057,16355.96,A,False
+12,Queso Manchego La Pastora,86,0,1998-05-06,0,344,12257.66,B,False
+13,Konbu,24,5,1998-05-06,0,891,4960.44,C,False
+66,Louisiana Hot Spiced Okra,4,20,1998-05-06,0,239,3383.0,C,False
+14,Tofu,35,0,1998-05-06,0,404,7991.49,B,False
+19,Teatime Chocolate Biscuits,25,5,1998-05-06,0,723,5862.62,B,False

@@ -1,0 +1,78 @@
+product_id,product_name,category_name,supplier_name,unit_price,units_in_stock,reorder_level
+1,Chai,Beverages,"Specialty Biscuits, Ltd.",18.0,39,10
+2,Chang,Beverages,Exotic Liquids,19.0,17,25
+3,Aniseed Syrup,Condiments,Exotic Liquids,10.0,13,25
+4,Chef Anton's Cajun Seasoning,Condiments,New Orleans Cajun Delights,22.0,53,0
+5,Chef Anton's Gumbo Mix,Condiments,New Orleans Cajun Delights,21.35,0,0
+6,Grandma's Boysenberry Spread,Condiments,Grandma Kelly's Homestead,25.0,120,25
+7,Uncle Bob's Organic Dried Pears,Produce,Grandma Kelly's Homestead,30.0,15,10
+8,Northwoods Cranberry Sauce,Condiments,Grandma Kelly's Homestead,40.0,6,0
+9,Mishi Kobe Niku,Meat/Poultry,Tokyo Traders,97.0,29,0
+10,Ikura,Seafood,Tokyo Traders,31.0,31,0
+11,Queso Cabrales,Dairy Products,Cooperativa de Quesos 'Las Cabras',21.0,22,30
+12,Queso Manchego La Pastora,Dairy Products,Cooperativa de Quesos 'Las Cabras',38.0,86,0
+13,Konbu,Seafood,Mayumi's,6.0,24,5
+14,Tofu,Produce,Mayumi's,23.25,35,0
+15,Genen Shouyu,Condiments,Mayumi's,13.0,39,5
+16,Pavlova,Confections,"Pavlova, Ltd.",17.45,29,10
+17,Alice Mutton,Meat/Poultry,"Pavlova, Ltd.",39.0,0,0
+18,Carnarvon Tigers,Seafood,"Pavlova, Ltd.",62.5,42,0
+19,Teatime Chocolate Biscuits,Confections,"Specialty Biscuits, Ltd.",9.2,25,5
+20,Sir Rodney's Marmalade,Confections,"Specialty Biscuits, Ltd.",81.0,40,0
+21,Sir Rodney's Scones,Confections,"Specialty Biscuits, Ltd.",10.0,3,5
+22,Gustaf's Knäckebröd,Grains/Cereals,PB Knäckebröd AB,21.0,104,25
+23,Tunnbröd,Grains/Cereals,PB Knäckebröd AB,9.0,61,25
+24,Guaraná Fantástica,Beverages,Refrescos Americanas LTDA,4.5,20,0
+25,NuNuCa Nuß-Nougat-Creme,Confections,Heli Süßwaren GmbH & Co. KG,14.0,76,30
+26,Gumbär Gummibärchen,Confections,Heli Süßwaren GmbH & Co. KG,31.23,15,0
+27,Schoggi Schokolade,Confections,Heli Süßwaren GmbH & Co. KG,43.9,49,30
+28,Rössle Sauerkraut,Produce,Plutzer Lebensmittelgroßmärkte AG,45.6,26,0
+29,Thüringer Rostbratwurst,Meat/Poultry,Plutzer Lebensmittelgroßmärkte AG,123.79,0,0
+30,Nord-Ost Matjeshering,Seafood,Nord-Ost-Fisch Handelsgesellschaft mbH,25.89,10,15
+31,Gorgonzola Telino,Dairy Products,Formaggi Fortini s.r.l.,12.5,0,20
+32,Mascarpone Fabioli,Dairy Products,Formaggi Fortini s.r.l.,32.0,9,25
+33,Geitost,Dairy Products,Norske Meierier,2.5,112,20
+34,Sasquatch Ale,Beverages,Bigfoot Breweries,14.0,111,15
+35,Steeleye Stout,Beverages,Bigfoot Breweries,18.0,20,15
+36,Inlagd Sill,Seafood,Svensk Sjöföda AB,19.0,112,20
+37,Gravad lax,Seafood,Svensk Sjöföda AB,26.0,11,25
+38,Côte de Blaye,Beverages,Aux joyeux ecclésiastiques,263.5,17,15
+39,Chartreuse verte,Beverages,Aux joyeux ecclésiastiques,18.0,69,5
+40,Boston Crab Meat,Seafood,New England Seafood Cannery,18.4,123,30
+41,Jack's New England Clam Chowder,Seafood,New England Seafood Cannery,9.65,85,10
+42,Singaporean Hokkien Fried Mee,Grains/Cereals,Leka Trading,14.0,26,0
+43,Ipoh Coffee,Beverages,Leka Trading,46.0,17,25
+44,Gula Malacca,Condiments,Leka Trading,19.45,27,15
+45,Rogede sild,Seafood,Lyngbysild,9.5,5,15
+46,Spegesild,Seafood,Lyngbysild,12.0,95,0
+47,Zaanse koeken,Confections,Zaanse Snoepfabriek,9.5,36,0
+48,Chocolade,Confections,Zaanse Snoepfabriek,12.75,15,25
+49,Maxilaku,Confections,Karkki Oy,20.0,10,15
+50,Valkoinen suklaa,Confections,Karkki Oy,16.25,65,30
+51,Manjimup Dried Apples,Produce,"G'day, Mate",53.0,20,10
+52,Filo Mix,Grains/Cereals,"G'day, Mate",7.0,38,25
+53,Perth Pasties,Meat/Poultry,"G'day, Mate",32.8,0,0
+54,Tourtière,Meat/Poultry,Ma Maison,7.45,21,10
+55,Pâté chinois,Meat/Poultry,Ma Maison,24.0,115,20
+56,Gnocchi di nonna Alice,Grains/Cereals,Pasta Buttini s.r.l.,38.0,21,30
+57,Ravioli Angelo,Grains/Cereals,Pasta Buttini s.r.l.,19.5,36,20
+58,Escargots de Bourgogne,Seafood,Escargots Nouveaux,13.25,62,20
+59,Raclette Courdavault,Dairy Products,Gai pâturage,55.0,79,0
+60,Camembert Pierrot,Dairy Products,Gai pâturage,34.0,19,0
+61,Sirop d'érable,Condiments,Forêts d'érables,28.5,113,25
+62,Tarte au sucre,Confections,Forêts d'érables,49.3,17,0
+63,Vegie-spread,Condiments,"Pavlova, Ltd.",43.9,24,5
+64,Wimmers gute Semmelknödel,Grains/Cereals,Plutzer Lebensmittelgroßmärkte AG,33.25,22,30
+65,Louisiana Fiery Hot Pepper Sauce,Condiments,New Orleans Cajun Delights,21.05,76,0
+66,Louisiana Hot Spiced Okra,Condiments,New Orleans Cajun Delights,17.0,4,20
+67,Laughing Lumberjack Lager,Beverages,Bigfoot Breweries,14.0,52,10
+68,Scottish Longbreads,Confections,"Specialty Biscuits, Ltd.",12.5,6,15
+69,Gudbrandsdalsost,Dairy Products,Norske Meierier,36.0,26,15
+70,Outback Lager,Beverages,"Pavlova, Ltd.",15.0,15,30
+71,Flotemysost,Dairy Products,Norske Meierier,21.5,26,0
+72,Mozzarella di Giovanni,Dairy Products,Formaggi Fortini s.r.l.,34.8,14,0
+73,Röd Kaviar,Seafood,Svensk Sjöföda AB,15.0,101,5
+74,Longlife Tofu,Produce,Tokyo Traders,10.0,4,5
+75,Rhönbräu Klosterbier,Beverages,Plutzer Lebensmittelgroßmärkte AG,7.75,125,25
+76,Lakkalikööri,Beverages,Karkki Oy,18.0,57,20
+77,Original Frankfurter grüne Soße,Condiments,Plutzer Lebensmittelgroßmärkte AG,13.0,32,15
