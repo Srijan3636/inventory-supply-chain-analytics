@@ -1,12 +1,31 @@
 # Inventory & Supply Chain Analytics
 
-Analytics on inventory efficiency, supplier performance, and order fulfilment
-using the Northwind sample database — inventory turnover, slow-moving stock,
-supplier lead times, and delivery reliability, all via SQL window functions
-and CTEs.
+**In plain English:** this project takes a real (if old — 1996-98) retail
+order dataset and answers practical operations questions: which products
+are sitting unsold, which suppliers deliver late, and how reliable is
+delivery overall. Every result below came from actually running the code —
+nothing here is made up or illustrative.
 
-**Status: built and verified against real data.** Every number below is from
-an actual query, not illustrative.
+**Current status:** the data, database, and analysis are fully built and
+working. The Power BI **dashboard is not built yet** — what exists is the
+underlying data model (tables and formulas Power BI can read), not the actual
+charts. See "What's in this repo" below for exactly what that means.
+
+## What's in this repo — a map, in plain words
+
+| Folder / file | What it actually is |
+|---|---|
+| **README.md** (this file) | Start here. What the project does and what it found |
+| **scripts/** | Python programs that download and load the data |
+| **sql/** | The actual database questions (queries), written in SQL |
+| **exports/** | The query results, saved as spreadsheet-style CSV files |
+| **dashboard/** | Power BI data-model files (see status note above — no charts yet) |
+| **DASHBOARD.md** | Step-by-step instructions to finish building the visual dashboard |
+| **DECISIONS.md** | A log of tricky decisions made while building this, and why |
+| **QUESTIONS.md** | Practice interview questions about this project, with honest answers |
+
+If you only read one section below, read **Findings** — it's the actual
+output of this project in plain numbers.
 
 ## Data source
 
